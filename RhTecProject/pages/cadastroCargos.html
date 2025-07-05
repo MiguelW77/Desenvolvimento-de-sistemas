@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style3.css" />
+  <title>Cadastro</title>
+</head>
+<body class="body">
+  <main class="container">
+    <nav>
+      <h1 class="title">Cadastro de Cargos</h1>
+    </nav>
+    <form id="form-cargo">
+      <div class="row">
+        <div class="inputdiv">
+          <input id="nomeCargo" type="text" required />
+          <label for="nomeCargo">Nome do Cargo</label>
+        </div>
+        <div class="inputdiv">
+          <input id="descricaoCargo" type="text" required />
+          <label for="descricaoCargo">Descrição</label>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px;">
+        <button class="button" type="submit">Cadastrar Cargo</button>
+      </div>
+    </form>
+
+   
+    <table style="margin-top: 40px;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-cargos"></tbody>
+    </table>
+     <script src="./index.js" defer></script>
+      <div class="cadastrolink">
+                    <p>Cadastrar vínculos<a href="Cargosvinculos.html">Cadastre</a></p>
+                    
+                </div>
+            </div>
+</body>
+</html>

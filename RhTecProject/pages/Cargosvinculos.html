@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style3.css" />
+  <title>Cadastro</title>
+</head>
+<body class="body">
+  <main class="container">
+    <nav>
+      <h1 class="title">Gestão de Cargos</h1>
+    </nav>
+    <form id="form-vinculo">
+      <div class="row">
+        <div class="inputdiv">
+          <input id="funcionarioId" type="number" required />
+          <label for="funcionarioId">Id do Funcionário</label>
+        </div>
+        <div class="inputdiv">
+          <input id="cargoId" type="number" required />
+          <label for="cargoId">Id do Cargo</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inputdiv">
+          <input id="detalhes" type="text" required />
+          <label for="detalhes">Detalhes</label>
+        </div>
+        <div class="inputdiv">
+          <input id="dataInicio" type="date" required />
+          <label for="dataInicio">Data de Início</label>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <button class="button" type="submit">Cadastrar Vínculo</button>
+      </div>
+    </form>
+    <table style="margin-top: 40px;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Funcionário</th>
+          <th>Cargo</th>
+          <th>Detalhes</th>
+          <th>Início</th>
+          <th>Fim</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-vinculos"></tbody>
+    </table>
+  </main>
+
+  <script src="./index.js" defer></script>
+  <div class="row">
+               
+</body>
+</html>

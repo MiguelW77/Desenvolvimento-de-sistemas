@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    caret-color: rgb(17, 202, 202);
+
+}
+.row{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.inputdiv{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.inputdiv label{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 16px;
+    color: gray;
+    transition: all 0.4s ease;
+    pointer-events: auto;
+    cursor: text;
+   
+}
+.inputdiv input:not(:focus):not(:valid) {
+  background-color: rgb(255, 255, 255); 
+  color: rgb(0, 168, 168); 
+  box-shadow: inset 0 0 3px rgb(0, 168, 168);
+}
+.inputdiv input{
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    padding: 10px 10px 0 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 8px;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    font-size: 16px;
+    color:  rgb(0, 168, 168);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.inputdiv input:focus,
+.inputdiv input:valid{
+    color:rgb(0, 0, 0);
+    background-color:  rgb(255, 255, 255);
+    height: 30px;
+    padding-top: 10px;
+    box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.3);
+}
+.inputdiv input:focus + label,
+.inputdiv input:valid + label{
+    top: -25px;
+    left: 5px;
+    transition: all 0.4s ease;
+    font-size: 12px;
+    padding-top: 15px;
+    color:rgb(0, 168, 168);
+ 
+}
+.button{
+background-color:white;
+color: gray;
+font-weight: bold;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+justify-self: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    
+
+}
+.button:hover{
+    background-color: rgb(0, 168, 168);
+    color: white;
+}
+.title{
+   
+    font-size: 40px;
+    text-align: center;
+    user-select: none;
+    color: rgb(0, 168, 168);
+
+
+}
+
+.cadastrolink {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: gray;
+}
+
+.cadastrolink a {
+  color: rgb(0, 168, 168);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cadastrolink a:hover {
+  color: rgb(0, 120, 120);
+  text-decoration: underline;
+}
