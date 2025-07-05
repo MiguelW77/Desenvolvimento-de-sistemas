@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    
+    <title>Teste banco de imagens</title>
+    </head>
+    <body class="h-64 overflow-scroll p-10">
+        <nav class=" shadow appearance-none  bg-black border-gray-300 shadow-md rounded px-3 pt-6 pb-8 mb-4">
+            <h1  style="color: white;" class="bold text-white-600 white uppercase">Banco de imagens</h1>
+        </nav>
+        <form id="form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            
+    <div>
+
+   
+            <label for="name" >Nome da imagem:</label>
+            <input  id="nome" type="text" class="shadow appearance-none  w-full focus:outline-none focus:shadow-outline border border-gray-300 hover:shadow-blue-400" >
+            <label for="URL" >URL da imagem: </label>
+            <input id="url" type="text" class="shadow appearance-none  w-full focus:outline-none focus:shadow-outline border border-gray-300 hover:shadow-blue-400  " >
+            <button  type="button" onclick="addImage([])" class=" shadow appearance-none focus:outline-none focus:shadow-outline border border-gray-300 hover:shadow-blue-400" >Adicionar</button>     
+     
+     
+        </div>
+    
+       
+   
+        </form>
+
+        <div style="text-align: center;" class=" bold text-white-600 white uppercase"> 
+            <nav class="shadow appearance-none bg-black border-gray-300 shadow-md rounded px-3 pt-6 pb-8 mb-4">
+                     <h2 style=" color: white;" class="uppercase">IMAGENS</h2> 
+            </nav>
+            <div id="galeriaIMG">
+
+            </div>
+            
+
+
+                </thead>
+            </table>
+</div>
+           <script src="./javascript/index.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+          
+           
+    </body> 
+    </html>
